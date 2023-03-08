@@ -1,0 +1,139 @@
+#bg{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+body,p, a {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+#main {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#main form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    border: solid #DDD 0.1rem;
+    background-color: #F5F5F5;
+}
+
+#main h1 {
+    font-family: 'Helvetica';
+    font-size: 1rem;
+    position: absolute;
+    top: 11%;
+    left: 25%;
+    width: 30%;
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border: solid #DDD 0.1rem;
+}
+
+#form input[type=submit] {
+    width: 100%;
+    background-color: #6495ED;
+    margin: 4px 5px;
+}
+
+#form .msg{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#form input{
+    margin: 0.5rem auto;
+    display: block;
+    font-size: 1rem;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#form input [type=text], textarea {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper >div {
+    width: 100%;
+
+}
+
+/* For Smartphone*/
+@media only screen and (min-width: 25rem){
+    body {
+      line-height: 1.5rem;
+    }
+  
+    #main form input[type=submit] {
+      width: 100%;
+      margin: 4px 0px;
+      }
+
+    .wrapper >div {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* For Tablet*/
+@media only screen and (min-width: 35rem){
+    body {
+      line-height: 1.5rem;
+    }
+  
+    #main form input[type=submit] {
+        width: 35%;
+        margin: 4px 11px;
+   }
+      
+    .wrapper >div {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 40rem) and (max-width: 50rem) {
+    #container {
+        max-width: 50rem;
+    }
+    body {
+      line-height: 1.5rem;
+    }
+  
+    #main form input[type=button] {
+      width: 25%;
+      }
+    .flex-cont >div {
+        width: 45%;
+    }   
+    #form #submitbutton {
+        margin: 1px 0;
+        width: 10%;
+  }
+  #form h1 {
+    top: -12%;
+    left: 27.5%;
+    width: 10%;
+  }
+}
